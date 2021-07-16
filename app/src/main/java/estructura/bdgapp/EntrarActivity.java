@@ -20,7 +20,7 @@ import static android.widget.Toast.makeText;
 public class EntrarActivity extends AppCompatActivity {
 
     TextView txtDpiEnter;
-    Button bttnContinuar;
+  //  Button bttnContinuar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +41,13 @@ public class EntrarActivity extends AppCompatActivity {
         txtDpiEnter.setText(dpiEx);
 
         //Boton cerrar
-        bttnContinuar = (Button) findViewById(R.id.bttnContinuar);
+       /* bttnContinuar = (Button) findViewById(R.id.bttnContinuar);
         bttnContinuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finishAffinity();
             }
-        });
+        });*/
 
     }
     static final int REQUEST_TAKE_PHOTO = 1;

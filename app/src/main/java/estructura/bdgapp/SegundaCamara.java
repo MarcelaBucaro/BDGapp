@@ -33,8 +33,10 @@ public class SegundaCamara extends AppCompatActivity {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(intent, REQUEST_TAKE_PHOTO);
     }
+
+    //Metodo para cambiar acceso
     protected void Pantallas(){
-        boolean x=false;
+        boolean x=true;
         if (x==true) {
             Intent i = new Intent(SegundaCamara.this, EntrarActivity.class);
             i.putExtra("DPI", textView2.getText().toString());
