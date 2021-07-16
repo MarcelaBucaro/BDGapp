@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.math.BigInteger;
+
 public class SegundaCamara extends AppCompatActivity {
     Button bttnSiguiente2;
     TextView textView2;
@@ -36,13 +38,16 @@ public class SegundaCamara extends AppCompatActivity {
 
     //Metodo para cambiar acceso
     protected void Pantallas(){
-        boolean x=true;
-        if (x==true) {
+        //boolean x=true;
+        String numero = "1111111111111";
+        Bundle bundle= getIntent().getExtras();
+        String d2=bundle.getString("DPI").toString();
+        if (d2.equals(numero)) {
             Intent i = new Intent(SegundaCamara.this, EntrarActivity.class);
             i.putExtra("DPI", textView2.getText().toString());
             startActivity(i);
             return;
-        } if (x==false) {
+        } else {
             Intent e = new Intent(SegundaCamara.this, ErrorActivity.class);
             startActivity(e);
             return;
