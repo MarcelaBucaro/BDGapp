@@ -39,7 +39,7 @@ public class SegundaCamara extends AppCompatActivity {
     //Metodo para cambiar acceso
     protected void Pantallas(){
         //boolean x=true;
-        String numero = "1111111111111";
+        String numero = "3000123450101";
         Bundle bundle= getIntent().getExtras();
         String d2=bundle.getString("DPI").toString();
         if (d2.equals(numero)) {

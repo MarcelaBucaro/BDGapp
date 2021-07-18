@@ -7,6 +7,8 @@
     <string name="textIDE">IDE</string>
     <string name="txtDpiEnter">DPI_Ingresado</string>
     <string name="bttnContinuar">Continuar</string>
+    <string name="imagen">Imagen</string>
+    <string name="txtNombreEnter">Nombre</string>
 
     <string name="bttnError">Regresar</string>
     <string name="textAccesoError">Acceso</string>

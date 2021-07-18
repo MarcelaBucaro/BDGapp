@@ -5,7 +5,6 @@
     android:id="@+id/txt2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Azul_200"
     tools:context=".SegundaCamara">
 
     <LinearLayout
@@ -20,28 +19,43 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.44">
 
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="71dp"
+            android:layout_height="138dp"
+            android:layout_marginTop="6dp"
+            app:srcCompat="@mipmap/logo_bdg" />
+
         <TextView
             android:id="@+id/textRightPhoto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="70dp"
             android:gravity="center"
             android:text="Por favor, tomar foto lateral izquierdo"
             android:textColor="@color/black"
             android:textSize="35dp" />
 
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <Button
             android:id="@+id/bttnSiguiente2"
-            android:layout_width="190dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Siguiente" />
+            android:text="Siguiente"
+            app:backgroundTint="#2196F3" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:textColor="@color/Azul_200" />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

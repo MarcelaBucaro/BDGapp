@@ -4,53 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Azul_200"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
 
-    <LinearLayout
-        android:layout_width="293dp"
-        android:layout_height="559dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="343dp"
+        android:layout_height="618dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44">
+        app:layout_constraintVertical_bias="0.383">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="176dp"
-            android:layout_height="123dp"
-            app:srcCompat="@drawable/fake_logo" />
+            android:layout_width="71dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="96dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/logo_bdg" />
 
         <TextView
             android:id="@+id/textViewIngresarDpi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ingresar DPI:"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:layout_marginTop="32dp"
+            android:text="Ingrese su DPI:"
+            android:textColor="#6A6A6A"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonEntrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textBienvenido"
+            app:layout_constraintVertical_bias="0.347" />
 
         <EditText
             android:id="@+id/txtDpi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="291dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="24dp"
             android:background="#88EFF1F3"
             android:ems="12"
             android:fontFamily="serif-monospace"
             android:hint="DPI"
             android:inputType="numberSigned"
-            android:maxLength="13" />
+            android:maxLength="13"
+            app:layout_constraintBottom_toTopOf="@+id/buttonEntrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewIngresarDpi"
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/buttonEntrar"
+            android:layout_width="291dp"
+            android:layout_height="61dp"
+            android:layout_marginBottom="100dp"
+            android:text="Entrar"
+            app:backgroundTint="#2196F3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textBienvenido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Entrar"
-            app:backgroundTint="@color/Azul_100" />
-    </LinearLayout>
+            android:layout_marginTop="68dp"
+            android:text="Bienvenido"
+            android:textColor="@color/black"
+            android:textSize="48dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
