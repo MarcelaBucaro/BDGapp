@@ -29,6 +29,10 @@ public class FrontalCamara extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+    }
+
     private void recibirDato(){
 
         text = (TextView)findViewById(R.id.text);

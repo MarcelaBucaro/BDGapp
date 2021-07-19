@@ -57,9 +57,10 @@
             android:id="@+id/txtDpiEnter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:fontFamily="monospace"
+            android:gravity="center"
             android:text="@string/txtDpi"
+            android:textColor="#515151"
             android:textSize="20dp" />
 
         <TextView
@@ -78,6 +79,7 @@
             android:layout_marginBottom="40dp"
             android:gravity="center"
             android:hint="Nombre"
+            android:textColor="#515151"
             android:textSize="20dp"
             tools:text="Nombre" />
     </LinearLayout>

@@ -29,6 +29,11 @@ public class PrimeraCamara extends AppCompatActivity {
             }
             });
     }
+
+    @Override
+    public void onBackPressed() {
+    }
+
     static final int REQUEST_TAKE_PHOTO = 1;
 
     private void TomarFoto() {
