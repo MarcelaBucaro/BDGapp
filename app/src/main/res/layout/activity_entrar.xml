@@ -21,14 +21,16 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="63dp"
-            android:layout_height="86dp"
+            android:layout_width="117dp"
+            android:layout_height="138dp"
+            android:gravity="center"
             app:srcCompat="@mipmap/logo_bdg" />
 
         <TextView
             android:id="@+id/textAcceso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:layout_marginBottom="20dp"
             android:text="Acceso Correcto"
             android:textColor="@color/black"
@@ -39,12 +41,14 @@
             android:id="@+id/avatar"
             android:layout_width="149dp"
             android:layout_height="157dp"
+            android:gravity="center"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/textIDE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="IDE:"
             android:textColor="@color/black"
             android:textSize="25dp" />
@@ -53,6 +57,7 @@
             android:id="@+id/txtDpiEnter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:fontFamily="monospace"
             android:text="@string/txtDpi"
             android:textSize="20dp" />
@@ -61,6 +66,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Nombre:"
             android:textColor="@color/black"
             android:textSize="25dp" />
@@ -70,6 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="39dp"
             android:layout_marginBottom="40dp"
+            android:gravity="center"
             android:hint="Nombre"
             android:textSize="20dp"
             tools:text="Nombre" />

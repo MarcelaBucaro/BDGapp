@@ -16,6 +16,7 @@ Button bttnError;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_error);
+        getSupportActionBar().hide();
         TomarFoto();
         bttnError = (Button) findViewById(R.id.bttnError);
         bttnError.setOnClickListener(new View.OnClickListener() {

@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".EntrarActivity"></activity>
         <activity android:name=".ErrorActivity"></activity>
+        <activity android:name=".FrontalCamara"></activity>
         <activity android:name=".PrimeraCamara"></activity>
         <activity android:name=".SegundaCamara"></activity>
     </application>

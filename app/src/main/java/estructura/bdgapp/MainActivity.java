@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity{
                 if (DPI.length() < 13) {
                     makeText(MainActivity.this, "Ingrese su DPI", Toast.LENGTH_LONG).show();
                 } else {
-                    Intent p = new Intent(MainActivity.this, PrimeraCamara.class);
+                    Intent p = new Intent(MainActivity.this, FrontalCamara.class);
                     p.putExtra("DPI", cajaDpi.getText().toString());
                     startActivity(p);
                     return;

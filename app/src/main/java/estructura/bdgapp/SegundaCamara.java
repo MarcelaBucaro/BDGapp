@@ -19,6 +19,7 @@ public class SegundaCamara extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camara_segunda);
+        getSupportActionBar().hide();
         TomarFoto();
         recibirDato();
         bttnSiguiente2=(Button)findViewById(R.id.bttnSiguiente2);
