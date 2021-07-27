@@ -1,5 +1,5 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <string name="app_name">BDGapp</string>
+    <string name="app_name">App Validacion Facial</string>
     <string name="txtDpi">DPI</string>
     <string name="buttonEntrar">Ingresar</string>
 

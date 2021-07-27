@@ -20,6 +20,7 @@ import static android.widget.Toast.makeText;
 public class EntrarActivity extends AppCompatActivity {
 
     TextView txtDpiEnter;
+    TextView txtNameEnter;
   //  Button bttnContinuar;
 
     @Override
@@ -29,6 +30,9 @@ public class EntrarActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         TomarFoto();
         txtDpiEnter = (TextView)findViewById(R.id.txtDpiEnter);
+        txtNameEnter = (TextView)findViewById(R.id.txtNombreEnter);
+        String nameEx="Jose Ramirez";
+        txtNameEnter.setText(nameEx);
 
         final int dpi = getIntent().getIntExtra("DPI", 0);
         Intent intent = getIntent();
