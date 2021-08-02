@@ -1,6 +1,7 @@
 package estructura.bdgapp;
 
 import android.Manifest;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ public class EntrarActivity extends AppCompatActivity {
 
     TextView txtDpiEnter;
     TextView txtNameEnter;
+    ProgressDialog dialog;
   //  Button bttnContinuar;
 
     @Override
@@ -29,6 +31,12 @@ public class EntrarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_entrar);
         getSupportActionBar().hide();
         TomarFoto();
+        dialog=new ProgressDialog(EntrarActivity.this);
+        dialog.show();
+        dialog.setContentView(R.layout.progress_dialog);
+        dialog.getWindow().setBackgroundDrawableResource(
+                android.R.color.transparent
+        );
         txtDpiEnter = (TextView)findViewById(R.id.txtDpiEnter);
         txtNameEnter = (TextView)findViewById(R.id.txtNombreEnter);
         String nameEx="Jose Ramirez";

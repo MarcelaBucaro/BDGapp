@@ -17,7 +17,7 @@ Button bttnError;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_error);
         getSupportActionBar().hide();
-        TomarFoto();
+        //TomarFoto();
         bttnError = (Button) findViewById(R.id.bttnError);
         bttnError.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

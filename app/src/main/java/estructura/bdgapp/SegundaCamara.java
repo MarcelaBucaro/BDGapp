@@ -1,5 +1,6 @@
 package estructura.bdgapp;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -15,6 +16,7 @@ import java.math.BigInteger;
 public class SegundaCamara extends AppCompatActivity {
     Button bttnSiguiente2;
     TextView textView2;
+    ProgressDialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +27,28 @@ public class SegundaCamara extends AppCompatActivity {
         bttnSiguiente2=(Button)findViewById(R.id.bttnSiguiente2);
         bttnSiguiente2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Pantallas();
+                dialog=new ProgressDialog(SegundaCamara.this);
+                dialog.show();
+                dialog.setContentView(R.layout.progress_dialog);
+                dialog.getWindow().setBackgroundDrawableResource(
+                        android.R.color.transparent
+                );
+                Thread timer=new Thread(){
+                    @Override
+                    public void run() {
+                        try {
+                            sleep(3500);
+                            Pantallas();
+                            dialog.dismiss();
+                            finish();
+                            super.run();
+                        } catch (InterruptedException e){
+                            e.printStackTrace();
+                        }
+
+                    }
+                };
+                timer.start();
                 return;
             }
         });
@@ -45,7 +68,7 @@ public class SegundaCamara extends AppCompatActivity {
     //Metodo para cambiar acceso
     protected void Pantallas(){
         //boolean x=true;
-        String numero = "3000123450111";
+        String numero = "3000123450101";
         Bundle bundle= getIntent().getExtras();
         String d2=bundle.getString("DPI").toString();
         if (d2.equals(numero)) {

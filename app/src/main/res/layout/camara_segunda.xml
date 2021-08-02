@@ -38,12 +38,6 @@
             android:textColor="@color/black"
             android:textSize="35dp" />
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:progress="66"/>
 
         <Button
             android:id="@+id/bttnSiguiente2"
