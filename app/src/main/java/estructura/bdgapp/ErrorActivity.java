@@ -1,5 +1,6 @@
 package estructura.bdgapp;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -12,12 +13,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ErrorActivity extends AppCompatActivity {
 Button bttnError;
+ProgressDialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_error);
         getSupportActionBar().hide();
-        //TomarFoto();
+        TomarFoto();
+        dialog=new ProgressDialog(ErrorActivity.this);
+        dialog.show();
+        dialog.setContentView(R.layout.progress_dialog);
+        dialog.getWindow().setBackgroundDrawableResource(
+                android.R.color.transparent
+        );
         bttnError = (Button) findViewById(R.id.bttnError);
         bttnError.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

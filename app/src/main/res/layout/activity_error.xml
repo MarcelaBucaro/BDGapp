@@ -22,10 +22,11 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="117dp"
-            android:layout_height="138dp"
-            android:layout_marginTop="6dp"
-            app:srcCompat="@mipmap/logo_bdg" />
+            android:layout_width="217dp"
+            android:layout_height="178dp"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            app:srcCompat="@mipmap/logo_bdg_little" />
 
         <TextView
             android:id="@+id/textAccesoError"
@@ -41,7 +42,7 @@
             android:id="@+id/textIDEError"
             android:layout_width="274dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="52dp"
+            android:layout_marginBottom="42dp"
             android:gravity="center"
             android:text="Por favor, Ingrese de nuevo"
             android:textColor="#6A6A6A"
@@ -52,6 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:text="Regresar"
+            android:gravity="center"
             app:backgroundTint="#2196F3" />
     </LinearLayout>
 

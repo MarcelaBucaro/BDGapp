@@ -39,7 +39,7 @@ public class EntrarActivity extends AppCompatActivity {
         );
         txtDpiEnter = (TextView)findViewById(R.id.txtDpiEnter);
         txtNameEnter = (TextView)findViewById(R.id.txtNombreEnter);
-        String nameEx="Jose Ramirez";
+        String nameEx="Rosa Ramirez";
         txtNameEnter.setText(nameEx);
 
         final int dpi = getIntent().getIntExtra("DPI", 0);

@@ -21,28 +21,28 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="117dp"
-            android:layout_height="138dp"
+            android:layout_width="207dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="66dp"
             android:gravity="center"
-            app:srcCompat="@mipmap/logo_bdg" />
+            app:srcCompat="@mipmap/logo_bdg_little" />
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="157dp"
+            android:layout_height="135dp"
+            android:gravity="center"
+            app:srcCompat="@mipmap/foto_ingreso" />
 
         <TextView
             android:id="@+id/textAcceso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginBottom="20dp"
             android:text="Acceso Correcto"
             android:textColor="@color/black"
-            android:textSize="39dp"
+            android:textSize="30dp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/avatar"
-            android:layout_width="149dp"
-            android:layout_height="157dp"
-            android:gravity="center"
-            tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/textIDE"

@@ -19,23 +19,33 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="117dp"
-            android:layout_height="138dp"
-            android:layout_marginTop="96dp"
+            android:layout_width="217dp"
+            android:layout_height="178dp"
+            android:layout_marginTop="66dp"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/logo_bdg" />
+            app:srcCompat="@mipmap/logo_bdg_little" />
 
         <TextView
             android:id="@+id/textFronPhoto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="70dp"
             android:gravity="center"
-            android:text="Por favor, tomar foto de frente"
+            android:text="Quitar accesorios para foto de validación"
             android:textColor="@color/black"
             android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="(Mascarilla, lentes y sombrero)"
+            android:textColor="#7E7E7E"
+            android:textSize="20dp" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -49,6 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:text="Siguiente"
+            android:gravity="center"
             app:backgroundTint="#2196F3" />
 
         <TextView
