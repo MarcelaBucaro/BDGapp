@@ -24,8 +24,22 @@ ProgressDialog dialog;
         dialog.show();
         dialog.setContentView(R.layout.progress_dialog);
         dialog.getWindow().setBackgroundDrawableResource(
-                android.R.color.transparent
+                android.R.color.darker_gray
         );
+        Thread timer=new Thread(){
+            @Override
+            public void run() {
+                try {
+                    sleep(3500);
+                    dialog.dismiss();
+                    super.run();
+                } catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+
+            }
+        };
+        timer.start();
         bttnError = (Button) findViewById(R.id.bttnError);
         bttnError.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

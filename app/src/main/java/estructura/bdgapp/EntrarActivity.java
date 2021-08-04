@@ -46,8 +46,22 @@ public class EntrarActivity extends AppCompatActivity {
         dialog.show();
         dialog.setContentView(R.layout.progress_dialog);
         dialog.getWindow().setBackgroundDrawableResource(
-                android.R.color.transparent
+                android.R.color.darker_gray
         );
+        Thread timer=new Thread(){
+            @Override
+            public void run() {
+                try {
+                    sleep(3500);
+                    dialog.dismiss();
+                    super.run();
+                } catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+
+            }
+        };
+        timer.start();
         img=(ImageView)findViewById(R.id.imageView2);
         if (ContextCompat.checkSelfPermission(EntrarActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(EntrarActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(EntrarActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA}, 1000);
