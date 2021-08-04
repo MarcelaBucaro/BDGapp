@@ -30,7 +30,7 @@ ProgressDialog dialog;
             @Override
             public void run() {
                 try {
-                    sleep(3500);
+                    sleep(8000);
                     dialog.dismiss();
                     super.run();
                 } catch (InterruptedException e){
