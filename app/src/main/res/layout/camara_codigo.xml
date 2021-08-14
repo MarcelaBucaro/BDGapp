@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".SegundaCamara">
+    tools:context=".CodigoCamara">
 
     <LinearLayout
         android:layout_width="293dp"
@@ -23,35 +23,47 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="117dp"
-            android:layout_height="138dp"
+            android:layout_width="217dp"
+            android:layout_height="170dp"
             android:layout_marginTop="6dp"
-            app:srcCompat="@mipmap/logo_bdg" />
+            app:srcCompat="@drawable/magdalena_logo" />
 
         <TextView
             android:id="@+id/textRightPhoto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="70dp"
+            android:layout_marginBottom="30dp"
             android:gravity="center"
-            android:text="Por favor, tomar foto lateral izquierdo"
-            android:textColor="@color/black"
+            android:text="Codigo validado"
+            android:textColor="@color/Verde_Obscuro"
             android:textSize="35dp" />
 
+        <TextView
+            android:id="@+id/textIDE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="IDE:"
+            android:textColor="@color/Verde_Obscuro"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txtDpiEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="3000123450101"
+            android:textColor="@color/Gris"
+            android:textSize="20dp"
+            android:layout_marginBottom="25dp"/>
 
         <Button
             android:id="@+id/bttnSiguiente2"
-            android:layout_width="match_parent"
+            android:layout_width="291dp"
             android:layout_height="61dp"
             android:text="Siguiente"
-            app:backgroundTint="#2196F3" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textColor="@color/white" />
+            app:backgroundTint="@color/Verde_Base" />
 
     </LinearLayout>
 

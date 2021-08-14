@@ -66,12 +66,12 @@ public class EntrarActivity extends AppCompatActivity {
         if (ContextCompat.checkSelfPermission(EntrarActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(EntrarActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(EntrarActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA}, 1000);
         }
-        txtDpiEnter = (TextView)findViewById(R.id.txtDpiEnter);
+        //txtDpiEnter = (TextView)findViewById(R.id.txtDpiEnter);
         txtNameEnter = (TextView)findViewById(R.id.txtNombreEnter);
         String nameEx="Rosa Ramirez";
         txtNameEnter.setText(nameEx);
 
-        final int dpi = getIntent().getIntExtra("DPI", 0);
+        /*final int dpi = getIntent().getIntExtra("DPI", 0);
         Intent intent = getIntent();
         String dpiEx = "";
         // Validar que este llegando

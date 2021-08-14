@@ -17,11 +17,13 @@ public class FrontalCamara extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camara_frontal);
         getSupportActionBar().hide();
-        recibirDato();
+        //recibirDato();
         bttnSiguiente=(Button)findViewById(R.id.bttnSiguiente);
         bttnSiguiente.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v1) {
-                Pantallas();
+                //Pantallas();
+                Intent e = new Intent(FrontalCamara.this, ErrorActivity.class);
+                startActivity(e);
                 return;
             }
         });
@@ -30,9 +32,9 @@ public class FrontalCamara extends AppCompatActivity {
     @Override
     public void onBackPressed() {
     }
-    protected void Pantallas(){
+   /* protected void Pantallas(){
         //boolean x=true;
-        String numero = "3000123450101";
+        String numero = "3000123450111";
         Bundle bundle= getIntent().getExtras();
         String d2=bundle.getString("DPI").toString();
         if (d2.equals(numero)) {
@@ -45,7 +47,7 @@ public class FrontalCamara extends AppCompatActivity {
             startActivity(e);
             return;
         }
-    }
+    }*/
     private void recibirDato(){
 
         text = (TextView)findViewById(R.id.text);

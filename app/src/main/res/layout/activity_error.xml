@@ -26,7 +26,7 @@
             android:layout_height="178dp"
             android:layout_marginTop="36dp"
             android:gravity="center"
-            app:srcCompat="@mipmap/logo_bdg_little" />
+            app:srcCompat="@drawable/magdalena_logo" />
 
         <TextView
             android:id="@+id/textAccesoError"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:text="Acceso Denegado"
-            android:textColor="@color/black"
+            android:textColor="@color/Verde_Obscuro"
             android:textStyle="bold"
             android:textSize="35dp" />
 
@@ -45,7 +45,7 @@
             android:layout_marginBottom="42dp"
             android:gravity="center"
             android:text="Por favor, Ingrese de nuevo"
-            android:textColor="#6A6A6A"
+            android:textColor="@color/Gris"
             android:textSize="30dp" />
 
         <Button
@@ -54,7 +54,7 @@
             android:layout_height="61dp"
             android:text="Regresar"
             android:gravity="center"
-            app:backgroundTint="#2196F3" />
+            app:backgroundTint="@color/Verde_Base" />
     </LinearLayout>
 
 

@@ -11,4 +11,9 @@
     <color name="Azul_00">#405A71</color>
     <color name="Azul_100">#40709A</color>
     <color name="Azul_200">#4E4E4E</color>
+
+    <color name="Verde_Obscuro">#5D7C15</color>
+    <color name="Verde_Base">#6BB42E</color>
+    <color name="Gris">#777777</color>
+
 </resources>

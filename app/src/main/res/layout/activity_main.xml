@@ -28,47 +28,30 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/logo_bdg_little" />
+            app:srcCompat="@drawable/magdalena_logo" />
 
         <TextView
             android:id="@+id/textViewIngresarDpi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ingrese su DPI:"
-            android:textColor="#6A6A6A"
-            android:textSize="20dp"
+            android:layout_width="273dp"
+            android:layout_height="96dp"
+            android:gravity="center"
+            android:text="Tomar foto del codigo de barras de su identificación"
+            android:textColor="@color/Gris"
+            android:textSize="25dp"
             app:layout_constraintBottom_toTopOf="@+id/buttonEntrar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintHorizontal_bias="0.419"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textBienvenido"
-            app:layout_constraintVertical_bias="0.202" />
-
-        <EditText
-            android:id="@+id/txtDpi"
-            android:layout_width="291dp"
-            android:layout_height="39dp"
-            android:layout_marginBottom="24dp"
-            android:background="#88EFF1F3"
-            android:ems="12"
-            android:fontFamily="serif-monospace"
-            android:hint="DPI"
-            android:inputType="numberSigned"
-            android:maxLength="13"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/buttonEntrar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewIngresarDpi"
-            app:layout_constraintVertical_bias="0.375" />
+            app:layout_constraintVertical_bias="0.473" />
 
         <Button
             android:id="@+id/buttonEntrar"
             android:layout_width="291dp"
             android:layout_height="61dp"
             android:layout_marginBottom="116dp"
-            android:text="Entrar"
-            app:backgroundTint="#2196F3"
+            android:text="Ingresar"
+            app:backgroundTint="@color/Verde_Base"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -78,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bienvenido"
-            android:textColor="@color/black"
+            android:textColor="@color/Verde_Obscuro"
             android:textSize="48dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"

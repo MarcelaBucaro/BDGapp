@@ -20,13 +20,22 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="217dp"
-            android:layout_height="178dp"
-            android:layout_marginTop="66dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="56dp"
             android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/logo_bdg_little" />
+            app:srcCompat="@drawable/magdalena_logo" />
+
+        <TextView
+            android:id="@+id/textAntFronPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Por favor,"
+            android:textColor="@color/Verde_Obscuro"
+            android:textSize="35dp" />
 
         <TextView
             android:id="@+id/textFronPhoto"
@@ -34,7 +43,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Quitar accesorios para foto de validación"
-            android:textColor="@color/black"
+            android:textColor="@color/Verde_Obscuro"
             android:textSize="35dp" />
 
         <TextView
@@ -44,7 +53,7 @@
             android:layout_marginBottom="30dp"
             android:gravity="center"
             android:text="(Mascarilla, lentes y sombrero)"
-            android:textColor="#7E7E7E"
+            android:textColor="@color/Gris"
             android:textSize="20dp" />
 
         <ProgressBar
@@ -60,14 +69,9 @@
             android:layout_height="61dp"
             android:text="Siguiente"
             android:gravity="center"
-            app:backgroundTint="#2196F3" />
+            app:backgroundTint="@color/Verde_Base" />
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textColor="@color/white" />
+
 
     </LinearLayout>
 

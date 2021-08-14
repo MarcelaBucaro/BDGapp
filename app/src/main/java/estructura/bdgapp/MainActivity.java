@@ -21,17 +21,19 @@ import static android.widget.Toast.makeText;
 public class MainActivity extends AppCompatActivity{
 
     Button buttonEntrar;
-    EditText cajaDpi;
+    //EditText cajaDpi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
         buttonEntrar = (Button) findViewById(R.id.buttonEntrar);
-        cajaDpi = (EditText) findViewById(R.id.txtDpi);
+        //cajaDpi = (EditText) findViewById(R.id.txtDpi);
         buttonEntrar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String DPI = cajaDpi.getText().toString();
+                Intent i = new Intent(MainActivity.this, CodigoCamara.class);
+                startActivity(i);
+                /*String DPI = cajaDpi.getText().toString();
                 if (DPI.length() < 13) {
                     makeText(MainActivity.this, "Ingrese su DPI", Toast.LENGTH_LONG).show();
                 } else {
@@ -39,16 +41,17 @@ public class MainActivity extends AppCompatActivity{
                     p.putExtra("DPI", cajaDpi.getText().toString());
                     startActivity(p);
                     return;
-                    }
+                    }*/
+
                 }
             });
         }
 
 
-    protected void Pantallas(){
+    /*protected void Pantallas(){
         boolean x=true;
         if (x==true) {
-            Intent i = new Intent(MainActivity.this, EntrarActivity.class);
+            Intent i = new Intent(MainActivity.this, CodigoCamara.class);
             i.putExtra("DPI", cajaDpi.getText().toString());
             startActivity(i);
             return;
@@ -57,5 +60,5 @@ public class MainActivity extends AppCompatActivity{
             startActivity(e);
             return;
         }
-    }
+    }*/
 }

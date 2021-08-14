@@ -22,7 +22,7 @@ public class PrimeraCamara extends AppCompatActivity {
         bttnSiguiente1=(Button)findViewById(R.id.bttnSiguiente);
         bttnSiguiente1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v1) {
-                Intent p1 = new Intent(PrimeraCamara.this, SegundaCamara.class);
+                Intent p1 = new Intent(PrimeraCamara.this, CodigoCamara.class);
                 p1.putExtra("DPI", text.getText().toString());
                 startActivity(p1);
                 return;
